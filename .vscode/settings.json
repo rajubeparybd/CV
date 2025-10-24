@@ -1,0 +1,14 @@
+{
+    "editor.fontSize": 16,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.log": true,
+        "**/*.synctex.gz": true,
+        "**/*.te": true
+    }
+}

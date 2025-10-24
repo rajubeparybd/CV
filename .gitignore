@@ -1,0 +1,14 @@
+# Ignore all generated files from LaTeX compilation
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdf
+*.dvi
+*.ps
+
+# Keep only source .tex files
+!*.tex

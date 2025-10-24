@@ -1,0 +1,25 @@
+\documentclass[10pt, a4paper]{article}
+
+% Include all the configurations and packages
+\input{preamble}
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    % Include all sections
+    \input{header}
+    \vspace{5 pt}
+    \input{summary}
+    \input{experience}
+    % \input{publications}
+    \input{projects}
+    \input{technologies}
+    \input{softskills}
+    \input{education}
+    \input{certificate}
+\end{document}

@@ -1,0 +1,90 @@
+---
+description: Enforces conventional commit standards with short, descriptive messages
+alwaysApply: false
+---
+# Conventional Commits Rule
+
+## Format
+All commit messages MUST follow the conventional commit format:
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+## Requirements
+- **Keep commit messages SHORT** (50 characters or less for description)
+- **Be DESCRIPTIVE** but concise
+- Use **lowercase** for the description
+- **No period** at the end of the description
+- Use **imperative mood** ("add" not "added" or "adds")
+
+## Standard Types
+- `feat`: new feature
+- `fix`: bug fix
+- `docs`: documentation changes
+- `style`: formatting, missing semicolons, etc.
+- `refactor`: code change that neither fixes a bug nor adds a feature
+- `test`: adding missing tests or correcting existing tests
+- `chore`: updating grunt tasks, build tools, dependencies, etc.
+- `perf`: performance improvements
+- `ci`: continuous integration changes
+- `build`: changes affecting build system or external dependencies
+
+## Examples
+
+### ✅ Good Examples
+```
+feat: add user authentication
+fix: resolve memory leak in data processing
+docs: update API documentation
+style: format code with prettier
+refactor: simplify user validation logic
+test: add unit tests for auth module
+chore: update dependencies
+perf: optimize database queries
+```
+
+### ❌ Bad Examples
+```
+feat: Added a new feature for user authentication that allows users to login  # Too long
+Fix bug  # Not descriptive enough
+Added some stuff  # Vague and wrong tense
+feat: add user authentication.  # Unnecessary period
+FEAT: ADD USER AUTH  # Wrong case
+```
+
+## Scope Examples (Optional)
+```
+feat(auth): add login functionality
+fix(api): resolve timeout issues
+docs(readme): update installation guide
+test(user): add validation tests
+```
+
+## Breaking Changes
+For breaking changes, add `!` after the type/scope:
+```
+feat!: remove deprecated API endpoints
+fix(api)!: change response format
+```
+
+## Body and Footer (Optional)
+Use when you need to explain **why** the change was made:
+```
+feat: add user authentication
+
+Implement JWT-based authentication to secure API endpoints.
+This replaces the previous session-based approach.
+
+Closes #123
+```
+
+## Key Rules
+1. **ALWAYS** use conventional commit format
+2. **NEVER** exceed 50 characters for the description
+3. **ALWAYS** be descriptive about what changed
+4. **NEVER** use past tense or periods in description
+5. **ALWAYS** use lowercase for description
